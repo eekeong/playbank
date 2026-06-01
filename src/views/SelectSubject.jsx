@@ -39,7 +39,7 @@ const SelectSubject = ({ onBack, onStartQuiz, openModal }) => {
   };
 
   return (
-    <div className="view-content" style={{ display: 'flex', flexDirection: 'column', height: '100%', paddingBottom: '0' }}>
+    <div className="view-content" style={{ display: 'flex', flexDirection: 'column', height: '100%', overflowY: 'auto', paddingBottom: '120px' }}>
       
       {/* Header */}
       <header className="flex-between" style={{ padding: '24px 20px 16px', background: 'var(--bg-primary)' }}>

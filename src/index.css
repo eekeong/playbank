@@ -97,14 +97,14 @@ body, html {
   display: flex;
   justify-content: center;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 /* Mobile App Container Wrapper */
 .app-container {
   width: 100%;
   max-width: 480px; /* Mobile width constraint */
-  height: 100vh;
+  height: 100dvh;
   overflow: hidden;
   background-color: var(--bg-primary);
   position: relative;

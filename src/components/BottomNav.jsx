@@ -15,7 +15,7 @@ const BottomNav = ({ currentView, setCurrentView }) => {
       left: 0,
       width: '100%',
       backgroundColor: 'var(--brand-primary)',
-      padding: '16px 8px 24px',
+      padding: '16px 8px calc(24px + env(safe-area-inset-bottom, 0px))',
       display: 'flex',
       justifyContent: 'space-around',
       alignItems: 'center',
