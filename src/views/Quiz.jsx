@@ -7,7 +7,7 @@ import { useWindowSize } from 'react-use';
 function PlayBankMiniLogo() {
   return (
     <div className="animate-slide-up" style={{ margin: '0 auto', display: 'flex', height: '56px', width: '56px', alignItems: 'center', justifyContent: 'center', borderRadius: '50%', border: '2px solid var(--brand-primary)', backgroundColor: '#000', boxShadow: 'var(--card-shadow-sm)', overflow: 'hidden', animationDelay: '0.1s' }}>
-      <img src="/playbanklogo.png" alt="PlayBank" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+      <img src="./playbanklogo.png" alt="PlayBank" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
     </div>
   );
 }
@@ -17,7 +17,7 @@ function TrophyHero() {
     <div className="animate-slide-up" style={{ position: 'relative', margin: '16px auto 0', display: 'flex', height: '190px', width: '190px', alignItems: 'center', justifyContent: 'center', animationDelay: '0.3s', zIndex: 10 }}>
       <div style={{ position: 'absolute', inset: '-30px', borderRadius: '50%', background: 'radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 70%)', animation: 'pulse-glow 2s infinite ease-in-out' }} />
       <div style={{ position: 'relative', display: 'flex', height: '160px', width: '160px', alignItems: 'center', justifyContent: 'center', zIndex: 1 }}>
-        <img src="/trophy.png" alt="Trophy" style={{ width: '100%', height: '100%', objectFit: 'contain', filter: 'drop-shadow(0 10px 15px rgba(0,0,0,0.2))' }} />
+        <img src="./trophy.png" alt="Trophy" style={{ width: '100%', height: '100%', objectFit: 'contain', filter: 'drop-shadow(0 10px 15px rgba(0,0,0,0.2))' }} />
       </div>
     </div>
   );
@@ -499,7 +499,7 @@ const Quiz = ({ onComplete, onBack, currentBP, currentUser }) => {
             color: feedback === 'correct' ? '#000' : '#FFF'
           }}>
             <div style={{ width: '60px', height: '60px', flexShrink: 0 }}>
-              <img src="/target_bullseye.png" alt="Target" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+              <img src="./target_bullseye.png" alt="Target" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
             </div>
             <div style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '4px' }}>
@@ -526,7 +526,7 @@ const Quiz = ({ onComplete, onBack, currentBP, currentUser }) => {
         <div className="text-small-bold">Question {currentIndex + 1}/{questions.length}</div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
           <div style={{ width: '24px', height: '24px', borderRadius: '50%', background: '#000', border: '1px solid var(--brand-primary)', overflow: 'hidden' }}>
-             <img src="/playbanklogo.png" alt="Logo" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+             <img src="./playbanklogo.png" alt="Logo" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </div>
           <span className="text-body-bold">{currentBP + sessionBP} BP</span>
         </div>
