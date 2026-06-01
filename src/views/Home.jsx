@@ -27,7 +27,7 @@ const Home = ({ onStartChallenge, onGoMarket, userBP, playsToday }) => {
             border: '2px solid var(--brand-primary)',
             background: '#000'
           }}>
-            <img src="./playbanklogo.png" alt="PlayBank Logo" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <img src={`${import.meta.env.BASE_URL}playbanklogo.png`} alt="PlayBank Logo" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </div>
           <div>
             <h1 className="text-h3">Hello, Guest</h1>
@@ -93,7 +93,7 @@ const Home = ({ onStartChallenge, onGoMarket, userBP, playsToday }) => {
           height: '180px',
           zIndex: 1
         }}>
-          <img src="./clock.png" alt="Clock" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+          <img src={`${import.meta.env.BASE_URL}clock.png`} alt="Clock" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
         </div>
       </section>
 
@@ -112,9 +112,9 @@ const Home = ({ onStartChallenge, onGoMarket, userBP, playsToday }) => {
           }}
         >
           {[
-            './slides/Untitled design (44).png',
-            './slides/Untitled design (45).png',
-            './slides/Untitled design (46).png'
+            `${import.meta.env.BASE_URL}slides/Untitled design (44).png`,
+            `${import.meta.env.BASE_URL}slides/Untitled design (45).png`,
+            `${import.meta.env.BASE_URL}slides/Untitled design (46).png`
           ].map((src, idx) => (
             <div key={idx} style={{ 
               scrollSnapAlign: 'start', flex: '0 0 85%', 

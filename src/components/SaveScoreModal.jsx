@@ -82,7 +82,7 @@ const SaveScoreModal = ({ onClose, onRegisterSuccess, currentBP, registerContext
             background: '#000',
             overflow: 'hidden'
           }}>
-            <img src="./playbanklogo.png" alt="PlayBank Logo" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <img src={`${import.meta.env.BASE_URL}playbanklogo.png`} alt="PlayBank Logo" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </div>
           <h2 className="text-h2" style={{ marginBottom: '8px' }}>
             {registerContext === 'guest_200' ? "You've reached 200 BP!" : 'Register to collect your BP!'}

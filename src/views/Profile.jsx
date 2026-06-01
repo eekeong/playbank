@@ -148,7 +148,7 @@ const Profile = ({ currentUser, userBP, onLogout, onRegister, onRequestBooster }
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
             <div style={{ width: '48px', height: '48px', borderRadius: '50%', border: '2px solid var(--brand-primary)', backgroundColor: '#000', overflow: 'hidden' }}>
-              <img src="./playbanklogo.png" alt="PlayBank" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <img src={`${import.meta.env.BASE_URL}playbanklogo.png`} alt="PlayBank" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </div>
             <h1 style={{ fontSize: '29px', fontWeight: 900, color: '#000' }}>PlayBank</h1>
           </div>
