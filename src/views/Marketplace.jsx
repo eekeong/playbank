@@ -1206,15 +1206,21 @@ const Marketplace = ({ userBP, currentUser, onRegister, onUserUpdate }) => {
 
   // Internal routing switch
   const renderCurrentView = () => {
+    const FullScreenOverlay = ({ children }) => (
+      <div style={{ position: 'fixed', top: 0, left: '50%', transform: 'translateX(-50%)', width: '100%', maxWidth: '480px', height: '100dvh', background: 'var(--bg-app)', zIndex: 9999, overflowY: 'auto' }}>
+        {children}
+      </div>
+    );
+
     switch (view) {
       case 'details':
-        return renderDetailsView();
+        return <FullScreenOverlay>{renderDetailsView()}</FullScreenOverlay>;
       case 'checkout':
-        return renderCheckoutView();
+        return <FullScreenOverlay>{renderCheckoutView()}</FullScreenOverlay>;
       case 'success':
-        return renderSuccessView();
+        return <FullScreenOverlay>{renderSuccessView()}</FullScreenOverlay>;
       case 'history':
-        return renderHistoryView();
+        return <FullScreenOverlay>{renderHistoryView()}</FullScreenOverlay>;
       case 'list':
       default:
         return renderListView();
